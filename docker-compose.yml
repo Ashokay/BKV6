@@ -1,0 +1,14 @@
+version: '3'
+services:
+  bkv6_app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - .:/app
+    # Add any additional configurations or port mappings if needed
+    # ports:
+    #   - "5050:5050"
+    # volumes:
+    #   - /path/to/host/folder:/app/data  # Example for data volume
+    #   - /path/to/host/config:/app/config  # Example for config volume
